@@ -36,17 +36,20 @@
        
         /* Loading GeoJson Files */
         w = map.data.loadGeoJson('UK-Adresses/W.geojson');
-        // arr = [];
         map.data.addGeoJson(w);
+        e = map.data.loadGeoJson('UK-Adresses/E.geojson');
+        map.data.addGeoJson(e);
+        b = map.data.loadGeoJson('UK-Adresses/B.geojson');
+        map.data.addGeoJson(b);
         
         
-        const testFolder = './UK-Adresses';
-        const fs = require('fs');
-        fs.readdir(testFolder, (err, files) => {
-          files.forEach(file => {
-             console.log(file); // use those file and return it as a REST API
-            });
-        });              
+        // const testFolder = './UK-Adresses';
+        // const fs = require('fs');
+        // fs.readdir(testFolder, (err, files) => {
+        //   files.forEach(file => {
+        //      console.log(file); // use those file and return it as a REST API
+        //     });
+        // });              
         
       }
 
