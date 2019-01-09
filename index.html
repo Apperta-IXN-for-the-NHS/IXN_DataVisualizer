@@ -31,9 +31,6 @@
           center: {lat: 52.500, lng: 0.250},
         });
     
-        
-        map.data.loadGeoJson('https://storage.googleapis.com/mapsdevsite/json/google.json');
-       
         /* Loading GeoJson Files */
         w = map.data.loadGeoJson('UK-Adresses/W.geojson');
         map.data.addGeoJson(w);
@@ -41,6 +38,8 @@
         map.data.addGeoJson(e);
         b = map.data.loadGeoJson('UK-Adresses/B.geojson');
         map.data.addGeoJson(b);
+
+        map.data.setStyle({ icon: '//example.com/path/to/image.png', fillColor: 'green'});
         
         
         // const testFolder = './UK-Adresses';
