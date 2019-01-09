@@ -33,7 +33,7 @@
     
         
         map.data.loadGeoJson('https://storage.googleapis.com/mapsdevsite/json/google.json');
-        data = map.data.loadGeoJson('UK-Adresses/W.geojson');
+        data = map.data.loadGeoJson('/UK-Adresses/W.geojson');
         map.data.addGeoJson(data);
         map.data.setStyle({ icon: '//example.com/path/to/image.png', fillColor: 'green'});
         map.data.add({geometry: new google.maps.Data.Polygon([outerCoords, innerCoords1,innerCoords2])})
