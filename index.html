@@ -45,6 +45,10 @@
         ox = map.data.loadGeoJson('UK-Adresses/OX.geojson');
         map.data.addGeoJson(ox);
 
+        map.data.addListener('click', function(event) {
+   map.data.overrideStyle(event.feature, {fillColor: 'black'});
+});
+
         map.data.setStyle({ icon: '//example.com/path/to/image.png', fillColor: 'yellow'});
         
         
