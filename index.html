@@ -51,6 +51,16 @@
         // });
 
         map.data.setStyle({fillColor: 'yellow', strokeWeight: 1});
+        // Color Capital letters blue, and lower case letters red.
+      // Capital letters are represented in ascii by values less than 91
+        map.data.setStyle(function(feature) {
+        var ascii = feature.getProperty('ascii');
+        var color = ascii > 91 ? 'red' : 'blue';
+        return {
+          fillColor: color,
+          strokeWeight: 1
+         };
+        });
         
         
         // const testFolder = './UK-Adresses';
