@@ -51,12 +51,17 @@
         // map.data.overrideStyle(event.feature, {fillColor: 'black'});
         // });
 
-        map.data.setStyle({fillColor: 'yellow', strokeWeight: 1});
-        // Color Capital letters blue, and lower case letters red.
-      // Capital letters are represented in ascii by values less than 91
+        // map.data.setStyle({fillColor: 'yellow', strokeWeight: 1});
+
         map.data.setStyle(function(feature) {
-        var ascii = feature.getProperty('ascii');
-        var color = ascii > 91 ? 'red' : 'blue';
+        var number = Math.random() * 100;
+        var color = 'red';
+        if(number > 30){
+          color = 'green';
+        }
+        if(number > 70){
+          color = 'yellow';
+        }
         return {
           fillColor: color,
           strokeWeight: 1
