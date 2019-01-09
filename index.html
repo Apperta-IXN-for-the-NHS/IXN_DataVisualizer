@@ -9,7 +9,7 @@
        * element that contains the map. */
       #map {
         height: 60%;
-        widows: 60%;
+        width: 60%;
       }
       /* Optional: Makes the sample page fill the window. */
       html, body {
@@ -46,9 +46,9 @@
         ox = map.data.loadGeoJson('UK-Adresses/OX.geojson');
         map.data.addGeoJson(ox);
 
-        map.data.addListener('click', function(event) {
-   map.data.overrideStyle(event.feature, {fillColor: 'black'});
-});
+        // map.data.addListener('click', function(event) {
+        // map.data.overrideStyle(event.feature, {fillColor: 'black'});
+        // });
 
         map.data.setStyle({fillColor: 'yellow', strokeWeight: 1});
         
