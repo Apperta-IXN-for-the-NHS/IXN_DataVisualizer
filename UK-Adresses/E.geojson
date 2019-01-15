@@ -1412,6 +1412,7 @@
             },
             "properties": {
                 "name": "E1",
+                "score" : "7.0",
                 "styleUrl": "#E1",
                 "styleHash": "-65060efe",
                 "description": "E1 postcode district",
@@ -2090,6 +2091,7 @@
             },
             "properties": {
                 "name": "E1W",
+                "score" : "7.0",
                 "styleUrl": "#E1",
                 "styleHash": "-65060efe",
                 "description": "E1W postcode district",
@@ -3024,6 +3026,7 @@
             },
             "properties": {
                 "name": "E2",
+                "score" : "7.0",
                 "styleUrl": "#E",
                 "styleHash": "18535fae",
                 "description": "E2 postcode district",
@@ -3782,6 +3785,7 @@
             },
             "properties": {
                 "name": "E3",
+                "score" : "7.0",
                 "styleUrl": "#E",
                 "styleHash": "18535fae",
                 "description": "E3 postcode district",
@@ -4460,6 +4464,7 @@
             },
             "properties": {
                 "name": "E4",
+                "score" : "7.0",
                 "styleUrl": "#E",
                 "styleHash": "18535fae",
                 "description": "E4 postcode district",
@@ -5414,6 +5419,7 @@
             },
             "properties": {
                 "name": "E5",
+                "score" : "7.0",
                 "styleUrl": "#E",
                 "styleHash": "18535fae",
                 "description": "E5 postcode district",
@@ -6236,6 +6242,7 @@
             },
             "properties": {
                 "name": "E6",
+                "score" : "7.0",
                 "styleUrl": "#E",
                 "styleHash": "18535fae",
                 "description": "E6 postcode district",
@@ -6962,6 +6969,7 @@
             },
             "properties": {
                 "name": "E7",
+                "score" : "7.0",
                 "styleUrl": "#E",
                 "styleHash": "18535fae",
                 "description": "E7 postcode district",
@@ -7968,6 +7976,7 @@
             },
             "properties": {
                 "name": "E8",
+                "score" : "7.0",
                 "styleUrl": "#E",
                 "styleHash": "18535fae",
                 "description": "E8 postcode district",
@@ -8742,6 +8751,7 @@
             },
             "properties": {
                 "name": "E9",
+                "score" : "7.0",
                 "styleUrl": "#E",
                 "styleHash": "18535fae",
                 "description": "E9 postcode district",
@@ -9604,6 +9614,7 @@
             },
             "properties": {
                 "name": "E10",
+                "score" : "7.0",
                 "styleUrl": "#E",
                 "styleHash": "18535fae",
                 "description": "E10 postcode district",
@@ -10646,6 +10657,7 @@
             },
             "properties": {
                 "name": "E11",
+                "score" : "7.0",
                 "styleUrl": "#E",
                 "styleHash": "18535fae",
                 "description": "E11 postcode district",
@@ -11252,6 +11264,7 @@
             },
             "properties": {
                 "name": "E12",
+                "score" : "7.0",
                 "styleUrl": "#E",
                 "styleHash": "18535fae",
                 "description": "E12 postcode district",
@@ -12046,6 +12059,7 @@
             },
             "properties": {
                 "name": "E13",
+                "score" : "7.0",
                 "styleUrl": "#E",
                 "styleHash": "18535fae",
                 "description": "E13 postcode district",
@@ -13012,6 +13026,7 @@
             },
             "properties": {
                 "name": "E14",
+                "score" : "7.0",
                 "styleUrl": "#E",
                 "styleHash": "18535fae",
                 "description": "E14 postcode district",
@@ -13852,6 +13867,7 @@
             },
             "properties": {
                 "name": "E15",
+                "score" : "7.0",
                 "styleUrl": "#E",
                 "styleHash": "18535fae",
                 "description": "E15 postcode district",
@@ -14802,6 +14818,7 @@
             },
             "properties": {
                 "name": "E16",
+                "score" : "7.0",
                 "styleUrl": "#E",
                 "styleHash": "18535fae",
                 "description": "E16 postcode district",
@@ -15540,6 +15557,7 @@
             },
             "properties": {
                 "name": "E17",
+                "score" : "7.0",
                 "styleUrl": "#E",
                 "styleHash": "18535fae",
                 "description": "E17 postcode district",
@@ -16098,6 +16116,7 @@
             },
             "properties": {
                 "name": "E18",
+                "score" : "7.0",
                 "styleUrl": "#E",
                 "styleHash": "18535fae",
                 "description": "E18 postcode district",
@@ -16160,6 +16179,7 @@
             },
             "properties": {
                 "name": "E20",
+                "score" : "7.0",
                 "styleUrl": "#E",
                 "styleHash": "18535fae",
                 "description": "E20 postcode district",
