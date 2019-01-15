@@ -14,5 +14,13 @@ html, body {
     padding: 0;
   }
 
-/*  Style for the Legend */
+#info-box {
+    background-color: white;
+    border: 1px solid black;
+    bottom: 30px;
+    height: 20px;
+    padding: 10px;
+    position: absolute;
+    left: 30px;
+  }
 
