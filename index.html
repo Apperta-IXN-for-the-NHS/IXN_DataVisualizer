@@ -40,7 +40,7 @@
     ox = map.data.loadGeoJson('UK-Adresses/OX.geojson');
     map.data.addGeoJson(ox);
     wc = map.data.loadGeoJson('UK-Adresses/WC.geojson');
-    wc.getProperty()
+    
 
     map.data.addListener('click', function(event) {
     map.data.overrideStyle(event.feature, {fillColor: 'black'});
