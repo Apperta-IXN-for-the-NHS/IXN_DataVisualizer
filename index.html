@@ -42,7 +42,7 @@
     wc = map.data.loadGeoJson('UK-Adresses/WC.geojson');
     
 
-    map.data.addListener('click', function(event) {
+    map.data.addListener('mouseover', function(event) {
     map.data.overrideStyle(event.feature, {fillColor: 'black'});
     alert(event.feature.getProperty('average'));
     });
