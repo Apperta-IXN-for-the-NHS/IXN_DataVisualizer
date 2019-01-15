@@ -1,8 +1,5 @@
-function initMap() {
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 7,
-      center: {lat: 52.500, lng: 0.250},
-    });
+function initMap(map) {
+    
     /* Loading GeoJson Files */
     w = map.data.loadGeoJson('UK-Adresses/W.geojson');
     map.data.addGeoJson(w);
