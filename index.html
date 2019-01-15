@@ -42,10 +42,10 @@
     wc = map.data.loadGeoJson('UK-Adresses/WC.geojson');
     wc.getProperty()
 
-    // map.data.addListener('click', function(event) {
-    // map.data.overrideStyle(event.feature, {fillColor: 'black'});
-    // });
-    // map.data.setStyle({fillColor: 'yellow', strokeWeight: 1});
+    map.data.addListener('click', function(event) {
+    map.data.overrideStyle(event.feature, {fillColor: 'black'});
+    });
+    map.data.setStyle({fillColor: 'yellow', strokeWeight: 1});
 
     
 
@@ -68,11 +68,11 @@
      };
       })};
 
-      map.data.addListener('mouseover', function(event) {
-          alert(event.feature.getProperty('average'));
-          // document.getelement('info-box').textContent =
-          //     event.feature.getProperty('average');
-        });
+      // map.data.addListener('mouseover', function(event) {
+      //     alert(event.feature.getProperty('average'));
+      //     // document.getelement('info-box').textContent =
+      //     //     event.feature.getProperty('average');
+      //   });
     
 
       </script>
