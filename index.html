@@ -60,15 +60,18 @@
         map.data.setStyle(function(feature) {
         var number = Math.random() * 100;
         var color = 'red';
-        if(number > 30){
-          color = 'green';
+        if(number > 25){
+          color = 'blue';
         }
-        if(number > 70){
+        if(number > 50){
           color = 'yellow';
+        }
+        if(number > 75){
+          color = 'green';
         }
         return {
           fillColor: color,
-          strokeWeight: 1
+          strokeWeight: 1.2
          };
         });
         
