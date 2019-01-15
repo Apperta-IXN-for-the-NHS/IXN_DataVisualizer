@@ -3,9 +3,6 @@
     "features": [
         {
             "type": "Feature",
-            "properties": {
-            "average":"5.0"
-            }
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
