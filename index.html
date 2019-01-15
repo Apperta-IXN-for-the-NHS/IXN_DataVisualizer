@@ -20,18 +20,20 @@
     </style>
   </head>
   <body>
+
+    <div style="text-align:center">
+      <h2> UK Well-Being Data </h2>
+    </div>
+    
     <div id="map"></div>
     <script>
-
       // This example uses the Google Maps JavaScript API's Data layer
       // to create a rectangular polygon with 2 holes in it.
-
       function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 7,
           center: {lat: 52.500, lng: 0.250},
         });
-    
         /* Loading GeoJson Files */
         w = map.data.loadGeoJson('UK-Adresses/W.geojson');
         map.data.addGeoJson(w);
@@ -58,15 +60,15 @@
         // map.data.setStyle({fillColor: 'yellow', strokeWeight: 1});
 
         map.data.setStyle(function(feature) {
-        var number = Math.random() * 100;
+        var number = Math.random() * 10;
         var color = 'red';
-        if(number > 25){
+        if(number > 2.5){
           color = 'blue';
         }
-        if(number > 50){
+        if(number > 5){
           color = 'yellow';
         }
-        if(number > 75){
+        if(number > 7.5){
           color = 'green';
         }
         return {
@@ -74,7 +76,6 @@
           strokeWeight: 1.2
          };
         });
-        
         
         // const testFolder = './UK-Adresses';
         // const fs = require('fs');
