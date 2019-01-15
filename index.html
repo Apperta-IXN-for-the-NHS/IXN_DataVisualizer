@@ -69,8 +69,9 @@
       })};
 
       map.data.addListener('mouseover', function(event) {
-          document.getElementById('info-box').textContent =
-              event.feature.getProperty('average');
+          alert(event.feature.getProperty('average'));
+          // document.getelement('info-box').textContent =
+          //     event.feature.getProperty('average');
         });
     
 
