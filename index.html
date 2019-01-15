@@ -44,8 +44,10 @@
 
     map.data.addListener('click', function(event) {
     map.data.overrideStyle(event.feature, {fillColor: 'black'});
+    alert(event.feature.getProperty('average'));
     });
-    map.data.setStyle({fillColor: 'yellow', strokeWeight: 1});
+
+
 
     
 
