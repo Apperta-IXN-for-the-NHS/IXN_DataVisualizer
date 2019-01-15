@@ -4,49 +4,50 @@
     height: 70%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10%;
-    margin-top: 10%;
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
 
-/* html, body {
+html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-  } */
+  }
 
 /*  Style for the Legend */
-  .my-legend .legend-title {
-    text-align: left;
-    margin-bottom: 8px;
-    font-weight: bold;
-    font-size: 90%;
-    }
-  .my-legend .legend-scale ul {
-    margin: 0;
-    padding: 0;
-    float: left;
-    list-style: none;
-    }
-  .my-legend .legend-scale ul li {
-    display: block;
-    float: left;
-    width: 50px;
-    margin-bottom: 6px;
-    text-align: center;
-    font-size: 80%;
-    list-style: none;
-    }
-  .my-legend ul.legend-labels li span {
-    display: block;
-    float: left;
-    height: 15px;
-    width: 50px;
-    }
-  .my-legend .legend-source {
-    font-size: 70%;
-    color: #999;
-    clear: both;
-    }
-  .my-legend a {
-    color: #777;
-    }
+
+#legend {
+  background: #FFF;
+  padding: 10px;
+  margin: 5px;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+}
+
+.color {
+  border: 1px solid;
+  height: 12px;
+  width: 12px;
+  margin-right: 3px;
+  float: left;
+}
+
+.red {
+  background: #C00;
+}
+
+.yellow {
+  background: #FF3;
+}
+
+.green {
+  background: #6F0;
+}
+
+.blue {
+  background: #06C;
+}
+
+.purple {
+  background: #63C;
+}
