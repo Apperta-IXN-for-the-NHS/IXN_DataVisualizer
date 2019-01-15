@@ -1,4 +1,4 @@
-function initMap(map) {
+
     
     /* Loading GeoJson Files */
  

@@ -39,7 +39,7 @@
     map.data.addGeoJson(sw);
     ox = map.data.loadGeoJson('UK-Adresses/OX.geojson');
     map.data.addGeoJson(ox);
-    wc = map.data.loadGeoJson('UK-Adresses/WC.geojson')
+    wc = map.data.loadGeoJson('UK-Adresses/WC.geojson');
 
     // map.data.addListener('click', function(event) {
     // map.data.overrideStyle(event.feature, {fillColor: 'black'});
@@ -62,9 +62,36 @@
       fillColor: color,
       strokeWeight: 1.2
      };
+      })};
 
-    })};
+ /* Legend */
       
+    var layer = new google.maps.FusionTablesLayer({
+          query: {
+          select: 'Location',
+            from: 'AIzaSyDhfs3WQijSbqOY-RDmoC1RoYfc3RIiRs4'
+          },
+          map: map
+        });
+
+
+        var legend = document.createElement('div');
+        legend.id = 'legend';
+        var content = [];
+        content.push('<h3>Butterflies*</h3>');
+        content.push('<p><div class="color red"></div>Battus</p>');
+        content.push('<p><div class="color yellow"></div>Speyeria</p>');
+        content.push('<p><div class="color green"></div>Papilio</p>');
+        content.push('<p><div class="color blue"></div>Limenitis</p>');
+        content.push('<p><div class="color purple"></div>Myscelia</p>');
+        content.push('<p>*Data is fictional</p>');
+        legend.innerHTML = content.join('');
+        legend.index = 1;
+        map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legend);
+      
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+
       </script>
 
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhfs3WQijSbqOY-RDmoC1RoYfc3RIiRs4&callback=initMap">
