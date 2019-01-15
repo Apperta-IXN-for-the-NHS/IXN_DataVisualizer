@@ -17,6 +17,8 @@
     <div id="info-box">?</div>
     
     <div id="map"></div>
+
+
     <script>
        function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -45,7 +47,7 @@
     
 
     map.data.addListener('mouseover', function(event) {
-      document.getElementById('info-box').textContent = event.feature.getProperty('score');
+      document.getElementById('info-box').textContent = event.feature.getProperty('name');
     });
 
 
