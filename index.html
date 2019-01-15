@@ -40,14 +40,18 @@
     ox = map.data.loadGeoJson('UK-Adresses/OX.geojson');
     map.data.addGeoJson(ox);
     wc = map.data.loadGeoJson('UK-Adresses/WC.geojson');
+    wc.getProperty()
 
     // map.data.addListener('click', function(event) {
     // map.data.overrideStyle(event.feature, {fillColor: 'black'});
     // });
     // map.data.setStyle({fillColor: 'yellow', strokeWeight: 1});
 
+    
+
     map.data.setStyle(function(feature) {
     var number = Math.random() * 10;
+  
     var color = 'red';
     if(number > 2.5){
       color = 'blue';
@@ -64,33 +68,11 @@
      };
       })};
 
- /* Legend */
-      
-    var layer = new google.maps.FusionTablesLayer({
-          query: {
-          select: 'Location',
-            from: 'AIzaSyDhfs3WQijSbqOY-RDmoC1RoYfc3RIiRs4'
-          },
-          map: map
+      map.data.addListener('mouseover', function(event) {
+          document.getElementById('info-box').textContent =
+              event.feature.getProperty('average');
         });
-
-
-        var legend = document.createElement('div');
-        legend.id = 'legend';
-        var content = [];
-        content.push('<h3>Butterflies*</h3>');
-        content.push('<p><div class="color red"></div>Battus</p>');
-        content.push('<p><div class="color yellow"></div>Speyeria</p>');
-        content.push('<p><div class="color green"></div>Papilio</p>');
-        content.push('<p><div class="color blue"></div>Limenitis</p>');
-        content.push('<p><div class="color purple"></div>Myscelia</p>');
-        content.push('<p>*Data is fictional</p>');
-        legend.innerHTML = content.join('');
-        legend.index = 1;
-        map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legend);
-      
-
-      google.maps.event.addDomListener(window, 'load', initialize);
+    
 
       </script>
 
