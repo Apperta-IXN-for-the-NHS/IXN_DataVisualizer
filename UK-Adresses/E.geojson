@@ -1,5 +1,8 @@
 {
     "type": "FeatureCollection",
+    "properties": {
+        "average":"5.0"
+    }
     "features": [
         {
             "type": "Feature",
@@ -1411,7 +1414,6 @@
                 ]
             },
             "properties": {
-                "average": "5.0",
                 "name": "E1",
                 "styleUrl": "#E1",
                 "styleHash": "-65060efe",
