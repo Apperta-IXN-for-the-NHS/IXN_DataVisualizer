@@ -4,7 +4,7 @@
     height: 70%;
     margin-left: 5%;
     margin-right: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
 }
 
 html, body {
@@ -21,20 +21,20 @@ html, body {
     height: 20px;
     padding: 10px;
     position: absolute;
-    left: 30px;
+    float: top;
   }
 
   .my-legend{
     text-align: center;
     float: center;
-    margin-left: 25%;
-    margin-right: 0%;
+    margin-left: 5%;
+    margin-right: auto;
   }
 
   .my-legend .legend-title {
     text-align: left;
     margin-bottom: 8px;
-    font-weight:  normal;
+    font-weight:  bold;
     font-size: 90%;
     }
   .my-legend .legend-scale ul {
@@ -49,19 +49,20 @@ html, body {
   .my-legend .legend-scale ul li {
     display: block;
     float: left;
-    width: 70px;
+    width: 80px;
     margin-bottom: 6px;
     text-align: center;
     font-size: 80%;
     list-style: none;
+    font-weight: bold;
   
     
     }
   .my-legend ul.legend-labels li span {
     display: block;
     float: left;
-    height: 15px;
-    width: 70px;
+    height: 20px;
+    width: 80px;
     }
 
   .my-legend a {
