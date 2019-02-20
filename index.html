@@ -50,10 +50,6 @@
       document.getElementById('info-box').textContent = event.feature.getProperty('name');
     });
 
-
-
-    
-
     map.data.setStyle(function(feature) {
     var number = Math.random() * 10;
   
@@ -81,6 +77,23 @@
     
 
       </script>
+
+
+        <div class='my-legend'>
+          <div class='legend-title'> Legend illustrates colors that correspond to </br> 
+                            predicted average scores for individual post code areas</div>
+          <div class='legend-scale'>
+            <ul class='legend-labels'>
+              <li><span style='background:red;'></span>0 - 2.5</li>
+              <li><span style='background:blue;'></span>2.5 - 5.0</li>
+              <li><span style='background:yellow;'></span>5.0 - 7.5</li>
+              <li><span style='background:green;'></span>7.5 - 10</li>
+            </ul>
+          </div>
+          
+          </div>
+          
+          
 
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhfs3WQijSbqOY-RDmoC1RoYfc3RIiRs4&callback=initMap">
     </script>
